@@ -1986,7 +1986,7 @@ SRST
     Enable USB emulation on machine types with an on-board USB host
     controller (if not enabled by default). Note that on-board USB host
     controllers may not support USB 3.0. In this case
-    ``-device qemu-xhci`` can be used instead on machines with PCI.
+    ``-device intel-pci-xhci`` can be used instead on machines with PCI.
 ERST
 
 DEF("usbdevice", HAS_ARG, QEMU_OPTION_usbdevice,
@@ -2001,7 +2001,7 @@ SRST
     achieved by selecting a USB host controller (if necessary) and the
     desired USB device via the ``-device`` option instead. For example,
     instead of using ``-usbdevice mouse`` it is possible to use
-    ``-device qemu-xhci -device usb-mouse`` to connect the USB mouse
+    ``-device intel-pci-xhci -device usb-mouse`` to connect the USB mouse
     to a USB 3.0 controller instead (at least on machines that support
     PCI and do not have an USB controller enabled by default yet).
     For more details, see the chapter about

@@ -346,7 +346,7 @@ static void test_docs_q35_virtio_graphical(void)
         { "scsi-disk", "scsi-hd" },
         { "scsi-optical-disk", "scsi-cd" },
         { "net", "virtio-net-pci" },
-        { "usb", "nec-usb-xhci" },
+        { "usb", "intel-usb-xhci" },
         { "tablet", "usb-tablet" },
         { "video", "qxl-vga" },
         { "sound", "ich9-intel-hda" },

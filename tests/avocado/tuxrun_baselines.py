@@ -191,7 +191,7 @@ class TuxRunBaselineTest(QemuSystemTest):
                          '-device', '{"driver":"virtio-net-pci","netdev":'
                          '"hostnet0","id":"net0","mac":"52:54:00:4c:e3:86",'
                          '"bus":"pci.0","addr":"0x9"}')
-        self.vm.add_args('-device', '{"driver":"qemu-xhci","p2":15,"p3":15,'
+        self.vm.add_args('-device', '{"driver":"intel-pci-xhci","p2":15,"p3":15,'
                          '"id":"usb","bus":"pci.0","addr":"0x2"}')
         self.vm.add_args('-device', '{"driver":"virtio-scsi-pci","id":"scsi0"'
                          ',"bus":"pci.0","addr":"0x3"}')

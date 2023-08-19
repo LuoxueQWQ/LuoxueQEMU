@@ -2990,7 +2990,7 @@ static void spapr_machine_init(MachineState *machine)
         if (smc->use_ohci_by_default) {
             pci_create_simple(phb->bus, -1, "pci-ohci");
         } else {
-            pci_create_simple(phb->bus, -1, "nec-usb-xhci");
+            pci_create_simple(phb->bus, -1, "intel-usb-xhci");
         }
 
         if (has_vga) {

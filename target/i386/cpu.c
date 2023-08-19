@@ -2445,7 +2445,7 @@ static const X86CPUDefinition builtin_x86_defs[] = {
         .model_id = "Intel(R) Pentiumiii",
     },
     {
-        .name = "athlon",
+        .name = "AMD_Athlon_TM_950",
         .level = 2,
         .vendor = CPUID_VENDOR_AMD,
         .family = 6,

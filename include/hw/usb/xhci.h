@@ -2,8 +2,8 @@
 #define HW_USB_XHCI_H
 
 #define TYPE_XHCI "base-xhci"
-#define TYPE_NEC_XHCI "nec-usb-xhci"
-#define TYPE_QEMU_XHCI "pci-xhci"
+#define TYPE_NEC_XHCI "intel-usb-xhci"
+#define TYPE_QEMU_XHCI "intel-pci-xhci"
 #define TYPE_XHCI_SYSBUS "sysbus-xhci"
 
 #define XHCI_MAXPORTS_2 15

@@ -1362,7 +1362,7 @@ class BootLinuxConsole(LinuxKernelTest):
                          '-device', 'pcie-pci-bridge,id=bridge1,bus=pcie.1,addr=0x0',
                          '-device', 'nvme,bus=pcie.2,addr=0x0,serial=1234',
                          '-device', 'e1000e,bus=bridge1,addr=0x3',
-                         '-device', 'nec-usb-xhci,bus=bridge1,addr=0x2')
+                         '-device', 'intel-usb-xhci,bus=bridge1,addr=0x2')
         self.vm.launch()
 
         self.wait_for_console_pattern("CPU: " + proc + " generation processor")

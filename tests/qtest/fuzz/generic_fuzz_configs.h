@@ -143,7 +143,7 @@ const generic_fuzz_config predefined_configs[] = {
         .name = "xhci",
         .args = "-machine q35 -nodefaults "
         "-drive file=null-co://,if=none,format=raw,id=disk0 "
-        "-device qemu-xhci,id=xhci -device usb-tablet,bus=xhci.0 "
+        "-device intel-pci-xhci,id=xhci -device usb-tablet,bus=xhci.0 "
         "-device usb-bot -device usb-storage,drive=disk0 "
         "-chardev null,id=cd0 -chardev null,id=cd1 "
         "-device usb-braille,chardev=cd0 -device usb-ccid -device usb-ccid "

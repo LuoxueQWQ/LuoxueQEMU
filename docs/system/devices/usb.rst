@@ -18,7 +18,7 @@ emulation uses less resources (especially CPU).  So if your guest
 supports XHCI (which should be the case for any operating system
 released around 2010 or later) we recommend using it:
 
-    qemu -device qemu-xhci
+    qemu -device intel-pci-xhci
 
 XHCI supports USB 1.1, USB 2.0 and USB 3.0 devices, so this is the
 only controller you need.  With only a single USB controller (and
@@ -121,7 +121,7 @@ option or the ``device_add`` monitor command. Available devices are:
 
        |qemu_system| [...]                                   \\
         -drive if=none,id=stick,format=raw,file=/path/to/file.img \\
-        -device nec-usb-xhci,id=xhci                              \\
+        -device intel-usb-xhci,id=xhci                              \\
         -device usb-storage,bus=xhci.0,drive=stick
 
 ``usb-uas``
@@ -138,7 +138,7 @@ option or the ``device_add`` monitor command. Available devices are:
        -drive if=none,id=uas-disk1,format=raw,file=/path/to/file1.img  \\
        -drive if=none,id=uas-disk2,format=raw,file=/path/to/file2.img  \\
        -drive if=none,id=uas-cdrom,media=cdrom,format=raw,file=/path/to/image.iso \\
-       -device nec-usb-xhci,id=xhci                                    \\
+       -device intel-usb-xhci,id=xhci                                    \\
        -device usb-uas,id=uas,bus=xhci.0                               \\
        -device scsi-hd,bus=uas.0,scsi-id=0,lun=0,drive=uas-disk1       \\
        -device scsi-hd,bus=uas.0,scsi-id=0,lun=1,drive=uas-disk2       \\

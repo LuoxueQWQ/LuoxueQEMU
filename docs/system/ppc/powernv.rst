@@ -125,7 +125,7 @@ different PHBs, each with a disk, the second PHB is empty :
   -device ide-hd,bus=sata0.0,unit=0,drive=drive0,id=ide,bootindex=1 \
   -device e1000e,netdev=net0,mac=C0:FF:EE:00:00:02,bus=bridge1,addr=0x2 \
   -netdev bridge,helper=/usr/libexec/qemu-bridge-helper,br=virbr0,id=net0 \
-  -device nec-usb-xhci,bus=bridge1,addr=0x7 \
+  -device intel-usb-xhci,bus=bridge1,addr=0x7 \
   \
   -serial mon:stdio -nographic
 

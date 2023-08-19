@@ -29,7 +29,7 @@ additional switches for the second seat:
 
 	-device pci-bridge,addr=12.0,chassis_nr=2,id=head.2 \
 	-device secondary-vga,bus=head.2,addr=02.0,id=video.2 \
-	-device nec-usb-xhci,bus=head.2,addr=0f.0,id=usb.2 \
+	-device intel-usb-xhci,bus=head.2,addr=0f.0,id=usb.2 \
 	-device usb-kbd,bus=usb.2.0,port=1,display=video.2 \
 	-device usb-tablet,bus=usb.2.0,port=2,display=video.2
 

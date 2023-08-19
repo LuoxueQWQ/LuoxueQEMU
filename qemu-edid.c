@@ -11,7 +11,7 @@
 
 static qemu_edid_info info = {
     .prefx = 1280,
-    .prefy = 800,
+    .prefy = 1600,
 };
 
 static void usage(FILE *out)

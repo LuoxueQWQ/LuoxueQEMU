@@ -15,7 +15,7 @@ Linux平台，OS-X，Win32（通过Mingw64工具链）和各种
 
   mkdir build
   cd build
-  ../configure
+  ../configure --target-list=x86_64-softmmu --prefix=~/Luo
   make
 
 其他信息也可以通过QEMU网站在线找到：

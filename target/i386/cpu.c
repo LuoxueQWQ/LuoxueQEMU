@@ -2205,7 +2205,7 @@ static const X86CPUDefinition builtin_x86_defs[] = {
         .model_id = "QEMU Virtual CPU version " QEMU_HW_VERSION,
     },
     {
-        .name = "phenom",
+        .name = "AMD_Phenom_X4_9550",
         .level = 5,
         .vendor = CPUID_VENDOR_AMD,
         .family = 16,
@@ -2237,7 +2237,7 @@ static const X86CPUDefinition builtin_x86_defs[] = {
         .model_id = "AMD Phenom(tm) X4 9550 2.2 GHz"
     },
     {
-        .name = "core2duo",
+        .name = "Intel_Core_2_Duo_T7700",
         .level = 10,
         .vendor = CPUID_VENDOR_INTEL,
         .family = 6,
@@ -2418,7 +2418,7 @@ static const X86CPUDefinition builtin_x86_defs[] = {
         .features[FEAT_1_EDX] =
             PENTIUM_FEATURES,
         .xlevel = 0,
-        .model_id = "Intel(R) Pentium ",
+        .model_id = "Intel(R) Pentium",
     },
     {
         .name = "Intel_Pentiumii",
@@ -2457,7 +2457,7 @@ static const X86CPUDefinition builtin_x86_defs[] = {
         .features[FEAT_8000_0001_EDX] =
             CPUID_EXT2_MMXEXT | CPUID_EXT2_3DNOW | CPUID_EXT2_3DNOWEXT,
         .xlevel = 0x80000008,
-        .model_id = "AMD Athlon TM 950" QEMU_HW_VERSION,
+        .model_id = "AMD Athlon TM 950",
     },
     {
         .name = "Intel_Atom_N270",
@@ -2569,7 +2569,7 @@ static const X86CPUDefinition builtin_x86_defs[] = {
         .model_id = "Intel(R) Core(TM)2 Duo Processor P9500",
     },
     {
-        .name = "Intel_Core_i7_920",
+        .name = "Intel_Core_Nehalem",
         .level = 11,
         .vendor = CPUID_VENDOR_INTEL,
         .family = 6,
@@ -2646,7 +2646,7 @@ static const X86CPUDefinition builtin_x86_defs[] = {
         }
     },
     {
-        .name = "Intel_Xeon_X5680",
+        .name = "Intel_Xeon_Westmere",
         .level = 11,
         .vendor = CPUID_VENDOR_INTEL,
         .family = 6,
@@ -2727,7 +2727,7 @@ static const X86CPUDefinition builtin_x86_defs[] = {
         }
     },
     {
-        .name = "Intel_Xeon_E3_1220",
+        .name = "Intel_Xeon_SandyBridge",
         .level = 0xd,
         .vendor = CPUID_VENDOR_INTEL,
         .family = 6,
@@ -2813,7 +2813,7 @@ static const X86CPUDefinition builtin_x86_defs[] = {
         }
     },
     {
-        .name = "Intel_Xeon_E3_1230_v2",
+        .name = "Intel_Xeon_IvyBridge",
         .level = 0xd,
         .vendor = CPUID_VENDOR_INTEL,
         .family = 6,
@@ -2905,7 +2905,7 @@ static const X86CPUDefinition builtin_x86_defs[] = {
         }
     },
     {
-        .name = "Intel_Core_i3_4350",
+        .name = "Intel_Core_Haswell",
         .level = 0xd,
         .vendor = CPUID_VENDOR_INTEL,
         .family = 6,
@@ -3034,7 +3034,7 @@ static const X86CPUDefinition builtin_x86_defs[] = {
         }
     },
     {
-        .name = "Intel_Core_M_5Y10a",
+        .name = "Intel_Core_Broadwell",
         .level = 0xd,
         .vendor = CPUID_VENDOR_INTEL,
         .family = 6,
@@ -3158,7 +3158,7 @@ static const X86CPUDefinition builtin_x86_defs[] = {
         }
     },
     {
-        .name = "Intel_Core_i3_6300",
+        .name = "Intel_Core_Skylake_Client",
         .level = 0xd,
         .vendor = CPUID_VENDOR_INTEL,
         .family = 6,
@@ -3277,7 +3277,7 @@ static const X86CPUDefinition builtin_x86_defs[] = {
         }
     },
     {
-        .name = "Intel_Xeon_E3_1240_v5",
+        .name = "Intel_Xeon_Skylake_Server",
         .level = 0xd,
         .vendor = CPUID_VENDOR_INTEL,
         .family = 6,
@@ -3413,7 +3413,7 @@ static const X86CPUDefinition builtin_x86_defs[] = {
         }
     },
     {
-        .name = "Intel_Xeon_Gold_5218",
+        .name = "Intel_Xeon_Cascadelake_Server",
         .level = 0xd,
         .vendor = CPUID_VENDOR_INTEL,
         .family = 6,
@@ -3547,7 +3547,7 @@ static const X86CPUDefinition builtin_x86_defs[] = {
         }
     },
     {
-        .name = "Intel_Xeon_Platinum_8360HL",
+        .name = "Intel_Xeon_Cooperlake",
         .level = 0xd,
         .vendor = CPUID_VENDOR_INTEL,
         .family = 6,
@@ -3662,7 +3662,7 @@ static const X86CPUDefinition builtin_x86_defs[] = {
         }
     },
     {
-        .name = "Intel_Xeon_D_1747NTE",
+        .name = "Intel_Xeon_Icelake_Server",
         .level = 0xd,
         .vendor = CPUID_VENDOR_INTEL,
         .family = 6,
@@ -3819,7 +3819,7 @@ static const X86CPUDefinition builtin_x86_defs[] = {
         }
     },
     {
-        .name = "Intel_Xeon_Platinum_8490H",
+        .name = "Intel_Xeon_SapphireRapids",
         .level = 0x20,
         .vendor = CPUID_VENDOR_INTEL,
         .family = 6,
@@ -4318,7 +4318,6 @@ static const X86CPUDefinition builtin_x86_defs[] = {
                 .version = 2,
                 .props = (PropValue[]) {
                     { "mpx", "off" },
-                    { "model-id", "Intel(R) Atom(TM) P5921B" },
                     { /* end of list */ },
                 },
             },
@@ -4517,7 +4516,7 @@ static const X86CPUDefinition builtin_x86_defs[] = {
         .model_id = "AMD Opteron(TM) 6380 Series Processor",
     },
     {
-        .name = "AMD_EPYC_7F32",
+        .name = "AMD_EPYC",
         .level = 0xd,
         .vendor = CPUID_VENDOR_AMD,
         .family = 23,
@@ -4659,7 +4658,7 @@ static const X86CPUDefinition builtin_x86_defs[] = {
         }
     },
     {
-        .name = "AMD_EPYC_7502",
+        .name = "AMD_EPYC_Rome",
         .level = 0xd,
         .vendor = CPUID_VENDOR_AMD,
         .family = 23,
@@ -4740,7 +4739,7 @@ static const X86CPUDefinition builtin_x86_defs[] = {
         }
     },
     {
-        .name = "AMD_EPYC_7302",
+        .name = "AMD_EPYC_Milan",
         .level = 0xd,
         .vendor = CPUID_VENDOR_AMD,
         .family = 25,

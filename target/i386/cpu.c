@@ -4587,8 +4587,13 @@ static const X86CPUDefinition builtin_x86_defs[] = {
             {
                 .version = 4,
                 .props = (PropValue[]) {
+                    { "ibpb", "on" },
+                    { "perfctr-core", "on" },
+                    { "clzero", "on" },
+                    { "xsaveerptr", "on" },
+                    { "xsaves", "on" },
                     { "model-id",
-                      "AMD EPYC 7702P Processor },
+                      "AMD EPYC 7702P Processor" },
                     { /* end of list */ }
                 },
                 .cache_info = &epyc_v4_cache_info
